@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(101, 126, 126);
+}
+
+.container{
+    width: 100%;
+    max-width: 900px;
+    background-color: #fff;
+    position: relative ;
+    border-radius: 6px;
+    padding: 30px;
+    margin: 0 15px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
+.btn{
+    padding: 10px 60px;
+    background: #80b8b3;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: 500;
+    border-radius: 30;
+}
+
+.container h1{
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(10, 14, 14);
+    position: relative;
+}
+
+.container h1::before{
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    height: 3px;
+    width: 27px;
+    background-color: #4070f4;
+}
+
+.container form{
+    position: relative;
+    min-height: 490px;
+    background-color: #f2f2f2;
+    margin-top: 16px;
+}
+
+.container form .details{
+    margin-top: 30px;
+}
+
+.container form .title{
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 6px 0;
+    color: #333;
+}
+
+.container form .fields{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+form .fields .input-field{
+    display: flex;
+    width: calc(100% / 3 - 15px);
+    flex-direction: column;
+    margin: 4px 0;
+}
+
+.input-field label{
+    font-size: 12px;
+    font-weight: 500;
+    color: #2e2e2e;
+}
+
+.input-field input{
+    outline: none;
+    border: 1px solid #f2f2f2;
+    padding: 0 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+    height: 42px;
+    margin: 8px 0;
+}
+
+.input-field input::is(:focus, :valid){
+    box-shadow: 0 3px 6px rgba(0,0,0,0.13);
+}
+
+.containerbtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    max-width: 200px;
+    width: 100%;
+    border: none;
+    outline: none;
+    color: aquamarine;
+    border-radius: 5px;
+    margin: 25px 0;
+    background-color: #333;
+    transition: all 0.3s linear;
+    cursor: alias;
+}
+
+.popup{
+    width: 400px;
+    background: #fff;
+    border-radius: 6px;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+
+.open-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.popup img{
+    width: 100px;
+    margin-top: 50px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.popup h2{
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+}
+
+.popup button{
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background: #6fd649;
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.2);
+}
